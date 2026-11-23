@@ -4,21 +4,14 @@
 
 # 监控的航线列表（可配置多条）
 routes:
-  - from: SZX
-    from_name: 深圳
-    to: KMG
-    to_name: 昆明
+  - from: PEK
+    from_name: 北京
+    to: NNG
+    to_name: 南宁
     dates:
-      - "2026-09-25"
+      - "2027-01-25"
     alert_threshold: 500        # 低于此价触发提醒（元，0 表示不启用）
 
-  - from: KMG
-    from_name: 昆明
-    to: SZX
-    to_name: 深圳
-    dates:
-      - "2026-10-07"
-    alert_threshold: 1000
 
 # 监控的平台（可选: ctrip, fliggy, tongcheng, qunar, tuniu）
 # fliggy(飞猪) 与 tuniu(途牛) 为纯 httpx 逆向实现，无需浏览器
